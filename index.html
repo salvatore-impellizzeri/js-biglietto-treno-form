@@ -28,24 +28,24 @@
 
                     <div class="row w-100 mx-auto justify-content-center">
                         <div class="col-4 justify-content-center input-container d-flex align-items-center flex-wrap">
-                            <label for="name" class="my-text-red fw-medium">
+                            <label for="name" class="my-text-red w-100 text-center fw-medium">
 
                                 Nome e Cognome
 
                             </label>
-                            <input class="border-red rounded" type="text" id="name" name="name" placeholder="Inserisci il tuo nome..." minlength="3" maxlength="50">
+                            <input class="border-red rounded" type="text" id="name" name="name" placeholder="Inserisci il tuo nome..." minlength="3" maxlength="50" required>
                         </div>
                         <div class="col-4 d-flex align-items-center justify-content-center input-container flex-wrap">
-                            <label for="distance" class="my-text-red fw-medium">
+                            <label for="distance" class="my-text-red w-100 text-center fw-medium">
 
                                 Km da percorrere
 
                             </label>
-                            <input class="border-red rounded" type="text" id="distance" name="distance" placeholder="Inserisci i km da percorrere...">
+                            <input class="border-red rounded" type="text" id="distance" name="distance" placeholder="Inserisci i km da percorrere..." required>
                         </div>
                         <div class="col-4 justify-content-center input-container d-flex align-items-center flex-wrap">
                             <label for="age" class="w-100 my-text-red fw-medium text-center">Fascia d'età</label>
-                            <select class="d-block mx-auto border-red rounded" name="age" id="age">
+                            <select class="d-block mx-auto border-red rounded" name="age" id="age" required> 
 
                                 <option value="#" selected disabled>Scegli...</option>
                                 <option value="minorenne">Minorenne</option>
@@ -56,26 +56,80 @@
                         </div>
 
                     </div>
-                    <div class="d-flex justify-content-center align-items-center gap-3 btn-container ">
+                    <div class="d-flex justify-content-center align-items-center gap-3 btn-container">
                         <button id="submit-button" class="btn my-text-red fw-medium btn-light border-red" type="submit">
                             Genera
                         </button>
-                        <button id="" class="btn my-text-red fw-medium btn-light border-red" type="submit">
+                        <button class="btn my-text-red fw-medium btn-light border-red" type="reset">
                             Annulla
                         </button>
                     </div>
                 </form>
             </div>
 
-            <div class="noneticket">
+            <div id="my-ticket" class="noneticket">
             <h1 class="text-center my-4 text-white">IL TUO BIGLIETTO</h1>
-                <div class="bg-white rounded w-50 mx-auto d-flex align-content-around p-3">
+                <div class="bg-white rounded w-50 mx-auto p-3">
+                    <h4>DETTAGLIO PASSEGGERI</h2>
+                    <div class="card">
+                        <div class="row g-0">
+                          <div class="col-md-4 bg-secondary p-2">
+                            
+                            <h5>NOME PASSEGGERO</h5>
+                            <p id="passenger" class="fw-medium fs-5"></p>
 
-                    <div class="bg-">
+                          </div>
+                          <div class="col-md-8">
+                            <div class="card-body">
+                                <div class="row">
 
+                                    <div class="col-3">
 
+                                        <h6 class="card-title">Offerta</h6>
+                                        <p class="card-text" id="discount">
+                                            
+                                            
 
-                    </div>
+                                        </p>
+
+                                    </div>
+                                    <div class="col-3">
+
+                                        <h6 class="card-title">Carrozza</h6>
+                                        <p class="card-text">
+                                            
+                                            
+
+                                        </p>
+
+                                    </div>
+                                    <div class="col-3">
+
+                                        <h6 class="card-title">Codice CP</h6>
+                                        <p class="card-text" id="codiceCP">
+                                            
+                                            
+
+                                        </p>
+
+                                    </div>
+                                    <div class="col-3">
+
+                                        <h6 class="card-title">Costo biglietto</h6>
+                                        <p class="card-text" id="price">
+                                            
+                                            
+
+                                        </p>
+
+                                    </div>
+
+                                </div>
+
+                            </div>
+                          </div>
+                        </div>
+                      </div>
 
                 </div>
             </div>
