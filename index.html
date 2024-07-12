@@ -18,24 +18,48 @@
         <title>Discord</title>
     </head>
     <body>
-        <!-- HEADER -->
-         <header>
-            <div class="container">
-                
-            </div>
-         </header>
 
         <!-- MAIN -->
         <main>
-            <div class="container">
 
-            </div>
+            <form>
+
+                <div>
+                    <label for="name">
+
+                        Nome e Cognome
+
+                    </label>
+                    <input type="text" id="name" name="name" placeholder="Inserisci il tuo nome..." minlength="3" maxlength="50">
+                </div>
+                <div>
+                    <label for="distance">
+
+                        Km da percorrere
+
+                    </label>
+                    <input type="text" id="distance" name="distance" placeholder="Inserisci i km da percorrere...">
+                </div>
+                <div>
+                    <label for="age">Fascia d'età</label>
+                    <select name="age" id="age">
+
+                        <option value="#" selected disabled>Scegli...</option>
+                        <option value="minorenne">Minorenne</option>
+                        <option value="maggiorenne">Maggiorenne</option>
+                        <option value="over65">Over 65</option>
+                        
+                    </select>
+                </div>
+                <button id="submit-button" type="submit">
+                    Invia
+                </button>
+
+            </form>
+
         </main>
-
-        <!-- FOOTER -->
-        <Footer>
-            <div class="container"></div>
-        </Footer>
         
+        <!-- JS -->
+         <script src="js/scripts.js"></script>
     </body>
 </html>
