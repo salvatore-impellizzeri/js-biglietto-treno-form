@@ -1,3 +1,4 @@
+// FUNZIONE FORM
 const infoForm = document.querySelector('form');
 infoForm.addEventListener("submit", 
     function(event){
@@ -15,7 +16,7 @@ infoForm.addEventListener("submit",
 
         const myTicket = document.getElementById("my-ticket");
         
-            if(myAge == ("minorenne" || "maggiorenne" || "over65")){
+            if(myAge == "minorenne" || "maggiorenne" || "over65"){
             myTicket.classList.replace('noneticket', 'ticket');
         }
 
@@ -44,9 +45,15 @@ infoForm.addEventListener("submit",
         document.getElementById("passenger").innerHTML= myName;
         document.getElementById("price").innerHTML= priceTot.toFixed(2) + "€";
 
-        const cpCode =  Math.floor(Math.random() * 100000);
+        // CP CODE
 
+        const cpCode =  Math.floor(Math.random() * 100000);
         document.getElementById("codiceCP").innerHTML = cpCode;
+
+        // CARROZZA
+
+        const carrozza =  Math.floor(Math.random() * 10 + 1);
+        document.getElementById("carrozza").innerHTML = carrozza;
     }
 
 )

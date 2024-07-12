@@ -26,9 +26,9 @@ form{
     height: 90px;
 }
 
-/* .noneticket{
+.noneticket{
     display: none;
-} */
+}
 
 .ticket{
     display: block;
