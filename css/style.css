@@ -1,35 +1,35 @@
 /* 
-                    RESET 
-*/
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: "Roboto", sans-serif;
-}
-
-/* 
-                    HEADER
-*/
-
-
-/* 
                     MAIN
 */
 
+body{
+    background-color: #B91450;
+}
 
-/* 
-                    FOOTER
-*/
+form{
+    height: 170px;
+}
 
+.input-container{
+    height: 80px;
+}
 
+.my-text-red{
+    color: #B91450;
+}
 
-/* 
-                    DEBUG
-*/
+.border-red{
+    border: 2px solid #B91450;
+}
 
+.btn-container{
+    height: 90px;
+}
 
-/* 
-                    RESPONSIVE
-*/
+.noneticket{
+    display: none;
+}
+
+.ticket{
+    display: block;
+}

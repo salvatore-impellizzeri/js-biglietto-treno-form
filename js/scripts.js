@@ -15,6 +15,12 @@ infoForm.addEventListener("submit",
         const myAge = document.getElementById("age").value;
         console.log("Fascia d'età:", age.value, typeof age.value);
 
+        const myTicket = document.getElementsByClassName("noneticket");
+
+        if (myTicket.classList.contains("noneticket")){
+            myTicket.classList.replace('noneticket', 'ticket');
+        }
+
         // PREZZO BASE
         let pricetot = myDistance.value * 0.21;
         console.log("pricetot:", pricetot.toFixed(2), "€");
